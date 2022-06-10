@@ -1,18 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-linear-gradient-text';
+import { StyleSheet, View } from 'react-native';
+import { LinearGradientText } from 'react-native-linear-gradient-text';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <LinearGradientText colors={['#ff0000', '#00ff00']} text="Hello World" />
     </View>
   );
 }
