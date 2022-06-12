@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Text, TextStyle } from 'react-native';
+import { Text, TextStyle, StyleSheet } from 'react-native';
 import MaskedView from '@react-native-masked-view/masked-view';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -21,10 +21,21 @@ export const LinearGradientText: FC<Props> = (props) => {
   } = props;
 
   return (
-    <MaskedView maskElement={<Text style={textStyle}>{text}</Text>}>
+    <MaskedView
+      maskElement={<Text style={[styles.maskText, textStyle]}>{text}</Text>}
+    >
       <LinearGradient colors={colors} start={start} end={end}>
-        <Text style={textStyle} />
+        <Text style={[styles.text, textStyle]} />
       </LinearGradient>
     </MaskedView>
   );
 };
+
+const styles = StyleSheet.create({
+  maskText: {
+    backgroundColor: 'transparent',
+  },
+  text: {
+    opacity: 0,
+  },
+});
