@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import { StyleSheet, View } from 'react-native';
 import { LinearGradientText } from 'react-native-linear-gradient-text';
 
-export const App = () => {
+export const App: FC = () => {
   return (
     <View style={styles.container}>
-      <LinearGradientText colors={['#ff0000', '#00ff00']} text="Hello World" />
+      <LinearGradientText
+        colors={['#000', '#00ff']}
+        text="Hello World"
+        start={{ x: 0.5, y: 0 }}
+        end={{ x: 1, y: 1 }}
+        textStyle={{ fontSize: 40 }}
+      />
     </View>
   );
 };
