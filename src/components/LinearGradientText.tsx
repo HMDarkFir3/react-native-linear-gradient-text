@@ -16,8 +16,8 @@ export const LinearGradientText: FC<Props> = (props) => {
     text,
     textStyle = {},
     colors,
-    start = { x: 0.5, y: 0.0 },
-    end = { x: 0.5, y: 1.0 },
+    start = { x: 0, y: 1 },
+    end = { x: 1, y: 1 },
   } = props;
 
   return (
@@ -25,7 +25,7 @@ export const LinearGradientText: FC<Props> = (props) => {
       maskElement={<Text style={[styles.maskText, textStyle]}>{text}</Text>}
     >
       <LinearGradient colors={colors} start={start} end={end}>
-        <Text style={[styles.text, textStyle]} />
+        <Text style={[styles.text, textStyle]}>{text}</Text>
       </LinearGradient>
     </MaskedView>
   );
