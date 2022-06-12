@@ -54,14 +54,15 @@ const styles = StyleSheet.create({
 });
 ```
 
-##Props
-| Prop | Type | Default | Description |
-| ------ | ------- | --------- | ------------|
-| text | string | **Required** | An string that display text. Example: `text="Hello World"` |
-| colors | string[] | **Required** | An array of at least two color values that represent gradient colors. Example: `colors={["black", "white"]}`. |
-| start | { x: number, y: number } | { x: 0.5, y: 0 } | An optional prop. He declare the position that the gradient starts. Example `start={{ x: 0.5, y: 0 }}`. |
-| end | { x: number, y: number } | { x: 1, y: 1 } | Same as start, but for the of the gradient. |
-| textStyle | [TextStyle](https://reactnative.dev/docs/text-style-props) | Default Value | A property to change all styles that a text has. |
+## Props
+
+| Prop      | Type                                                       | Default          | Description                                                                                                   |
+| --------- | ---------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------- |
+| text      | string                                                     | **Required**     | An string that display text. Example: `text="Hello World"`                                                    |
+| colors    | string[]                                                   | **Required**     | An array of at least two color values that represent gradient colors. Example: `colors={["black", "white"]}`. |
+| start     | { x: number, y: number }                                   | { x: 0.5, y: 0 } | An optional prop. He declare the position that the gradient starts. Example `start={{ x: 0.5, y: 0 }}`.       |
+| end       | { x: number, y: number }                                   | { x: 1, y: 1 }   | Same as start, but for the of the gradient.                                                                   |
+| textStyle | [TextStyle](https://reactnative.dev/docs/text-style-props) | Default Value    | A property to change all styles that a text has.                                                              |
 
 ## Author
 
