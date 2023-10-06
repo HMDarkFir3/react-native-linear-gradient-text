@@ -37,7 +37,12 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "linear-gradient",
+    "gradient",
+    "text",
+    "text-gradient",
+    "text-gradient-color"
   ],
   "repository": "https://github.com/HMDarkFir3/react-native-linear-gradient-text",
   "author": "Henrique Marques <henrique_marques.dev@outlook.com> (https://github.com/HMDarkFir3)",
