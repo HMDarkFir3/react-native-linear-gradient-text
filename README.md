@@ -88,7 +88,8 @@ const styles = StyleSheet.create({
 | colors    | string[]                                                   | **Required**     | An array of at least two color values that represent gradient colors. Example: `colors={["black", "white"]}`. |
 | start     | { x: number, y: number }                                   | { x: 0.5, y: 0 } | An optional prop. He declare the position that the gradient starts. Example `start={{ x: 0.5, y: 0 }}`.       |
 | end       | { x: number, y: number }                                   | { x: 1, y: 1 }   | Same as start, but for the of the gradient.                                                                   |
-| textStyle | [TextStyle](https://reactnative.dev/docs/text-style-props) | Default Value    | A property to change all styles that a text has.                                                              |
+| textStyle | [TextStyle](https://reactnative.dev/docs/text-style-props) | Default Value    | A property to change all styles that a text has. 
+| textProps | [TextProps](https://reactnative.dev/docs/text-style-props#props) | Default Value    | A property to apply native props to text.   |
 
 ---
 
@@ -103,6 +104,10 @@ const styles = StyleSheet.create({
 
 ---
 
+## Contributors
+
+
+-  [<img src="https://github.com/BLOCKMATERIAL.png" width="30" height="30">](https://github.com/BLOCKMATERIAL) [MATERIALBLOCK](https://github.com/BLOCKMATERIAL) 
 ## License
 
 This project is under the MIT license. See the [LICENSE](./LICENSE) to learn more.
