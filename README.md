@@ -64,6 +64,7 @@ export const App = () => {
         start={{ x: 0.5, y: 0 }}
         end={{ x: 1, y: 1 }}
         textStyle={{ fontSize: 40 }}
+		textProps={{allowFontScaling: true}} // Optional
       />
     </View>
   );
