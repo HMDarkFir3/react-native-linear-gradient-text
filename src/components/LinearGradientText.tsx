@@ -21,7 +21,8 @@ export const LinearGradientText: FC<Props> = (props) => {
       <LinearGradient colors={colors} start={start} end={end}>
       <Text style={[styles.text, textStyle]} {...textProps}>
           {text}
-        </Text>      </LinearGradient>
+        </Text>      
+        </LinearGradient>
     </MaskedView>
   );
 };
