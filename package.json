@@ -102,6 +102,7 @@
     "node_modules/",
     "lib/"
   ],
+  "release-it": "./release-it.config.js",
   "react-native-builder-bob": {
     "source": "src",
     "output": "lib",
