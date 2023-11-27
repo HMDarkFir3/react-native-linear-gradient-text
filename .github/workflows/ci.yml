@@ -48,4 +48,4 @@ jobs:
         run: yarn prepare
 
       - name: Push package
-      - run: yarn release
+        run: yarn release
