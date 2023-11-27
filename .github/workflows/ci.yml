@@ -55,7 +55,7 @@ jobs:
           git config --global user.email "hmdarkfire.dev@gmail.com"
           git config --global user.name "Henrique Marques"
 
-      - name: Push package
+      - name: Release
         run: yarn release
         env:
           GITHUB_TOKEN: ${{secrets.GHP_TOKEN}}
