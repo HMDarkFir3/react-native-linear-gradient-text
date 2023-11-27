@@ -46,3 +46,6 @@ jobs:
 
       - name: Build package
         run: yarn prepare
+
+      - name: Push package
+      - run: yarn release
