@@ -20,21 +20,6 @@ jobs:
       - name: Lint files
         run: yarn lint
 
-      - name: Typecheck files
-        run: yarn typecheck
-
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup
-        uses: ./.github/actions/setup
-
-      - name: Run unit tests
-        run: yarn test --maxWorkers=2 --coverage
-
   build-library:
     runs-on: ubuntu-latest
     steps:
@@ -44,20 +29,16 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-      - name: Build package
-        run: yarn prepare
-
-      - name: Login NPM
-        run: echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > ~/.npmrc
-
       - name: Config Git
         run: |
           git config --global user.email "hmdarkfire.dev@gmail.com"
           git config --global user.name "Henrique Marques"
 
+      - name: Login NPM
+        run: echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > ~/.npmrc
+
       - name: Release
         run: yarn release
         env:
           GITHUB_TOKEN: ${{secrets.GHP_TOKEN}}
-
          

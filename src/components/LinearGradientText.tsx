@@ -14,15 +14,22 @@ interface Props {
 }
 
 export const LinearGradientText: FC<Props> = (props) => {
-  const { text, textStyle = {}, textProps={}, colors, start = { x: 0, y: 1 }, end = { x: 1, y: 1 } } = props;
+  const {
+    text,
+    textStyle = {},
+    textProps = {},
+    colors,
+    start = { x: 0, y: 1 },
+    end = { x: 1, y: 1 },
+  } = props;
 
   return (
     <MaskedView maskElement={<Text style={[styles.maskText, textStyle]}>{text}</Text>}>
       <LinearGradient colors={colors} start={start} end={end}>
-      <Text style={[styles.text, textStyle]} {...textProps}>
+        <Text style={[styles.text, textStyle]} {...textProps}>
           {text}
-        </Text>      
-        </LinearGradient>
+        </Text>
+      </LinearGradient>
     </MaskedView>
   );
 };
