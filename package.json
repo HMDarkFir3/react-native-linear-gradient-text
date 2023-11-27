@@ -102,7 +102,23 @@
     "node_modules/",
     "lib/"
   ],
-  "release-it": "./release-it.config.js",
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular"
+      }
+    }
+  },
   "react-native-builder-bob": {
     "source": "src",
     "output": "lib",
