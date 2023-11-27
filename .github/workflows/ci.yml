@@ -47,5 +47,8 @@ jobs:
       - name: Build package
         run: yarn prepare
 
+      - name: Login NPM
+        run: npm login --registry=https://registry.npmjs.org/ --scope=@your-scope --always-auth --auth.token=${{ secrets.NPM_TOKEN }}
+
       - name: Push package
         run: yarn release
