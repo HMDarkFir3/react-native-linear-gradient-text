@@ -56,7 +56,8 @@ jobs:
           git config --global user.name "Henrique Marques"
 
       - name: Push package
-        run: | 
-          yarn release
-          echo "y"
-          echo "y"
+        run: yarn release
+        env:
+          GITHUB_TOKEN: ${{secrets.GHP_TOKEN}}
+
+         
