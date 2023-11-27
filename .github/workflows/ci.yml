@@ -50,5 +50,10 @@ jobs:
       - name: Login NPM
         run: echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > ~/.npmrc
 
+      - name: Config Git
+        run: |
+          git config --global user.email "hmdarkfire.dev@gmail.com"
+          git config --global user.name "Henrique Marques"
+
       - name: Push package
         run: yarn release
