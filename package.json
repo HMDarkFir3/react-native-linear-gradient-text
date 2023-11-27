@@ -52,7 +52,7 @@
   },
   "homepage": "https://github.com/HMDarkFir3/react-native-linear-gradient-text#readme",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
