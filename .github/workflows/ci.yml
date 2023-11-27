@@ -56,4 +56,7 @@ jobs:
           git config --global user.name "Henrique Marques"
 
       - name: Push package
-        run: yarn release
+        run: | 
+          yarn release
+          echo "y"
+          echo "y"
