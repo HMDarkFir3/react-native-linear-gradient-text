@@ -18,7 +18,7 @@
 
 ## About
 
-Component to display text with linear gradient.
+Component to display text with linear gradient
 
 ---
 
