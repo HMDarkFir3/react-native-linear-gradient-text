@@ -48,7 +48,7 @@ jobs:
         run: yarn prepare
 
       - name: Login NPM
-        run: npm login --registry=https://registry.npmjs.org/ --auth.token=${{ secrets.NPM_TOKEN }}
+        run: echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > ~/.npmrc
 
       - name: Push package
         run: yarn release
