@@ -38,7 +38,10 @@
     "text-gradient",
     "text-gradient-color"
   ],
-  "repository": "https://github.com/HMDarkFir3/react-native-linear-gradient-text",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HMDarkFir3/react-native-linear-gradient-text.git"
+  },
   "author": "Henrique Marques <hmdarkfire.dev@gmail.com> (https://github.com/HMDarkFir3)",
   "license": "MIT",
   "bugs": {
