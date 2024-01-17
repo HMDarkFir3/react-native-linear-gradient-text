@@ -10,10 +10,9 @@
     "build:ios": "cd ios && xcodebuild -workspace LinearGradientTextExample.xcworkspace -scheme LinearGradientTextExample -configuration Debug -sdk iphonesimulator CC=clang CPLUSPLUS=clang++ LD=clang LDPLUSPLUS=clang++ GCC_OPTIMIZATION_LEVEL=0 GCC_PRECOMPILE_PREFIX_HEADER=YES ASSETCATALOG_COMPILER_OPTIMIZATION=time DEBUG_INFORMATION_FORMAT=dwarf COMPILER_INDEX_STORE_ENABLE=NO"
   },
   "dependencies": {
-    "@react-native-masked-view/masked-view": "^0.3.0",
     "react": "18.2.0",
     "react-native": "0.72.5",
-    "react-native-linear-gradient": "^2.8.3"
+    "react-native-linear-gradient-text": "workspace:^"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

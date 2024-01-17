@@ -2818,13 +2818,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-masked-view/masked-view@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@react-native-masked-view/masked-view@npm:0.3.0"
+"@react-native-masked-view/masked-view@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@react-native-masked-view/masked-view@npm:0.3.1"
   peerDependencies:
     react: ">=16"
     react-native: ">=0.57"
-  checksum: 77cf06947640abf5e7bf8c63ba6ee79f7cb409f4a40d3a0242790ff3f61d1b08c4f51373668b0e0e0bb2f60ffe3e4d2e4ea26c7358874f94ac9317841fce1751
+  checksum: 880059020709ce856c448657c2d67a905f2ebcd3f42c1c4d344d732761cb2de98efb600172df5591d943f562393dbca42802e8a903b974aa2b038b441c5718fb
   languageName: node
   linkType: hard
 
@@ -11053,24 +11053,23 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@react-native-masked-view/masked-view": ^0.3.0
     "@react-native/metro-config": ^0.72.11
     babel-plugin-module-resolver: ^5.0.0
     metro-react-native-babel-preset: 0.76.8
     pod-install: ^0.1.0
     react: 18.2.0
     react-native: 0.72.5
-    react-native-linear-gradient: ^2.8.3
+    react-native-linear-gradient-text: "workspace:^"
   languageName: unknown
   linkType: soft
 
-"react-native-linear-gradient-text@workspace:.":
+"react-native-linear-gradient-text@workspace:., react-native-linear-gradient-text@workspace:^":
   version: 0.0.0-use.local
   resolution: "react-native-linear-gradient-text@workspace:."
   dependencies:
     "@commitlint/config-conventional": ^17.0.2
     "@evilmartians/lefthook": ^1.5.0
-    "@react-native-masked-view/masked-view": ^0.3.0
+    "@react-native-masked-view/masked-view": ^0.3.1
     "@react-native/eslint-config": ^0.72.2
     "@release-it/conventional-changelog": ^5.0.0
     "@testing-library/jest-dom": ^6.1.4
@@ -11095,10 +11094,8 @@ __metadata:
     turbo: ^1.10.7
     typescript: ^5.0.2
   peerDependencies:
-    "@react-native-masked-view/masked-view": "*"
     react: "*"
     react-native: "*"
-    react-native-linear-gradient: "*"
   languageName: unknown
   linkType: soft
 
